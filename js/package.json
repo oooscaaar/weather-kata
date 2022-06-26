@@ -1,0 +1,29 @@
+{
+  "name": "weather-kata",
+  "version": "1.0.0",
+  "description": "Kata to practice decoupling techniques and get fast and deterministic tests",
+  "main": " ",
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "coverage": "jest --coverage"
+  },
+  "author": "Codium",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+    "jest": "^27.5.1",
+    "request": "^2.88.2",
+    "sinon": "^13.0.2"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": ["@babel/plugin-transform-modules-commonjs"]
+      }
+    }
+  }
+}
